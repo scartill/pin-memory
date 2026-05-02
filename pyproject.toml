@@ -1,0 +1,18 @@
+[project]
+name = "pin-mcp"
+version = "0.1.0"
+description = "A Memory MCP server for pinning and recalling factoids."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]",
+    "click",
+    "rich",
+]
+
+[project.scripts]
+pin-mcp = "pin_mcp.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
