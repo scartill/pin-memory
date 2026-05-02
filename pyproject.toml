@@ -1,5 +1,5 @@
 [project]
-name = "pin-mcp"
+name = "pin-memory"
 version = "0.1.0"
 description = "A Memory MCP server for pinning and recalling factoids."
 readme = "README.md"
@@ -11,7 +11,11 @@ dependencies = [
 ]
 
 [project.scripts]
-pin-mcp = "pin_mcp.main:main"
+pin-memory = "pin_memory.main:main"
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pin_memory"]  
 
 [build-system]
 requires = ["hatchling"]
