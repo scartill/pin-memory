@@ -177,7 +177,7 @@ def install(workspace: str | None) -> None:
     stop_marker = "<!-- pin mcp stop -->"
 
     instruction = (
-        "Before staring the first task, fetch all global and project factoids via Pin MCP "
+        "Before starting the first task, fetch all global and project factoids via Pin MCP "
         "and use them as **important** instructions."
     )
     if workspace:
